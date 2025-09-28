@@ -1,0 +1,5 @@
+{
+  "name": "Gemini Powered CV Generator",
+  "description": "A dynamic CV generator that takes an XLSX file with Arabic CV data, uses Gemini to translate it into professional English, and generates a bilingual, beautifully styled web and PDF resume.",
+  "requestFramePermissions": []
+}
