@@ -33,6 +33,25 @@
 </head>
 <body class="bg-gradient-to-br from-blue-200 to-cyan-100">
     <div id="root"></div>
+    <!--
+      NOTE FOR DEPLOYMENT ON GITHUB PAGES OR OTHER STATIC HOSTS:
+
+      This project is written using TSX (.tsx files), which includes TypeScript and JSX syntax.
+      Web browsers cannot execute this code directly. It requires a "build step" to transpile
+      (convert) the TSX files into standard JavaScript (.js).
+
+      This development environment handles the transpilation for you automatically, but
+      for a production deployment on a static host like GitHub, you must set up a build process.
+
+      A typical workflow would be:
+      1. Use a modern JavaScript build tool like Vite, Parcel, or esbuild.
+      2. Configure the tool to use './index.tsx' as the input/entry point.
+      3. Run the build command. The tool will generate standard HTML, CSS, and JS files
+         in an output folder (commonly named 'dist' or 'build').
+      4. Deploy the contents of that output folder to your static host.
+      5. The build tool will automatically replace the script tag below with one
+         pointing to the final, browser-compatible JavaScript bundle.
+    -->
     <script type="module" src="./index.tsx"></script>
 </body>
 </html>
